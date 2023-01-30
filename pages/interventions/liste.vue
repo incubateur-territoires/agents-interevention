@@ -1,5 +1,5 @@
 <template>
-  <SubHeader></SubHeader>
+  <SubHeader>Liste des interventions</SubHeader>
   <ul class="fr-tags-group">
     <li><Tag>Urgent</Tag></li>
     <li><Tag>Normal</Tag></li>
