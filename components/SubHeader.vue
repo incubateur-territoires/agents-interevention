@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>TITLE</h1>
+    <h1><slot>Page</slot></h1>
   </div>
 </template>
