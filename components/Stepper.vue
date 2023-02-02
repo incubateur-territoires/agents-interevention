@@ -18,12 +18,6 @@ div.fr-stepper {
   background-color: var(--background-alt-blue-france);
 }
 
-ul,
-li {
-  padding: 0;
-  margin: 0;
-}
-
 ul {
   display: flex;
   justify-content: space-around;
