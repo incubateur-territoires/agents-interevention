@@ -11,6 +11,8 @@
     "nuxt": "^3.1.0"
   },
   "dependencies": {
-    "@gouvfr/dsfr": "^1.8.5"
+    "@gouvfr/dsfr": "^1.8.5",
+    "@vue-leaflet/vue-leaflet": "^0.8.1",
+    "leaflet": "^1.9.3"
   }
 }
