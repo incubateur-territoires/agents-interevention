@@ -1,0 +1,19 @@
+<template>
+    <Stepper></Stepper>
+    <article class="fr-p-1w">
+        <p class="fr-p-2w"> Kevin DUPOND, Stéphane Durand</p>
+        <Tag>Urgent</Tag>
+        <p class="fr-icon-map-pin-2-line fr-pt-2w"> 16, route de Béthune, 62300 Lens</p>
+        <p class="fr-icon-calendar-2-line fr-pt-1w"> Publiée le 23/11/2023 par Jean-Baptiste M.</p>
+        <p class="fr-icon-space fr-pt-1w"> Taille : Petit</p>
+        <p class="fr-icon-edit-box-line fr-pt-1w"> Support : Mur, Porte</p>
+        <p class="fr-pt-4w"> Le tag est situé sur la porte de garage et sur le mur situé juste à sa gauche. Il y a 4m2
+            de tags à nettoyer environ.</p>
+    <slot />
+        <img class="fr-responsive-img"
+            src="https://i.pinimg.com/originals/fe/64/99/fe649940d2ea4daa02c5f942fbb88517.jpg"
+            alt="[À MODIFIER - vide ou texte alternatif de l’image]" />
+    </article>
+    <hr>
+    <InterventionComments />
+</template>
