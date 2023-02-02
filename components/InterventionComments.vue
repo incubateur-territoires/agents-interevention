@@ -83,12 +83,12 @@ li.comment-collectivite p {
     border-radius: 16px 16px 0px 16px;
 }
 
-textarea{
+textarea {
     box-shadow: 0 0 0 1px var(--border-default-grey);
     border-radius: 10px;
 }
 
-button.comment-button{
+button.comment-button {
     color: var(--background-action-high-blue-france);
 }
 
@@ -97,11 +97,12 @@ h3 {
     border-radius: 10px;
     display: inline-block;
 }
-h3:after{
+
+h3:after {
     content: "-";
 }
 
-h3:before{
+h3:before {
     content: "-";
 }
 </style>
