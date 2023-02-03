@@ -44,7 +44,7 @@
             </ul>
         </section>
         <form class="fr-p-2w comment">
-            <textarea class="fr-col-10 fr-p-1w" placeholder="Ecrire un message" />
+            <textarea class="fr-col-12 fr-p-1w fr-pr-6w" placeholder="Ecrire un message" />
             <button class="fr-icon-send-plane-fill comment-button" type="submit"></button>
         </form>
     </section>
@@ -89,7 +89,10 @@ textarea {
 }
 
 button.comment-button {
-    color: var(--background-action-high-blue-france);
+    color: var(--background-active-blue-france);
+    position: absolute;
+    right: 24px;
+    top: 30px;
 }
 
 h3 {
@@ -104,5 +107,9 @@ h3:after {
 
 h3:before {
     content: "-";
+}
+
+form{
+    position: relative;
 }
 </style>
