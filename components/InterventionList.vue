@@ -54,11 +54,7 @@
     border-left: 2px solid #000;
 }
 
-ul{
-    padding: 0;
-    margin: 0;
-}
-li{
+li {
     list-style: none;
 }
 </style>
