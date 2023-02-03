@@ -16,3 +16,6 @@ time, mark, audio, video {
 	border: 0;
 }
 
+.leaflet-container{
+	position: sticky;
+}
