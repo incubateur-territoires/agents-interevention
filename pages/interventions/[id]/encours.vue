@@ -46,7 +46,7 @@
       </button>
     </li>
     <li>
-      <input type="file" capture="environment" accept="image" id="file">
+      <input type="file" capture="environment" accept="image/*" id="file">
       <label for="file" class="fr-btn">
         Prendre une photo
       </label>
