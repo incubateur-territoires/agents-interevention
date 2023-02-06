@@ -1,14 +1,21 @@
+<script setup>
+const props = defineProps({
+  current: Number,
+  last: Number,
+  labels: Array
+})
+</script>
+
+
 <template>
   <div>
     <div class="fr-stepper fr-p-2w">
-      <h2 class="fr-stepper__title"> <span class="fr-stepper__state">Étape 1 sur 3</span>
+      <h2 class="fr-stepper__title"> <span class="fr-stepper__state">Étape {{ current }} sur {{ last }}</span>
         <ul>
-          <li>À faire</li>
-          <li>En cours</li>
-          <li>Terminé</li>
+          <li v-for="label in labels">{{ label }}</li>
         </ul>
       </h2>
-      <div class="fr-stepper__steps" data-fr-current-step="1" data-fr-steps="3"></div>
+      <div class="fr-stepper__steps" :data-fr-current-step="current" :data-fr-steps="last"></div>
     </div>
   </div>
 </template>
@@ -17,7 +24,6 @@
 div.fr-stepper {
   background-color: var(--background-alt-blue-france);
 }
-
 ul {
   display: flex;
   justify-content: space-around;
