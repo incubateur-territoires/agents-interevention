@@ -41,19 +41,23 @@
   </InterventionDetails>
   <ul class="fr-btns-group">
     <li>
-      <button class="fr-btn fr-btn--secondary">Continuer sans photo</button>
+      <button class="fr-btn fr-btn--secondary">
+        Continuer sans photo
+      </button>
     </li>
     <li>
-      <input type="file" capture="environment" accept="image"> 
-      <button class="fr-btn">Prendre une photo</button>
+      <input type="file" capture="environment" accept="image" id="file">
+      <label for="file" class="fr-btn">
+        Prendre une photo
+      </label>
     </li>
   </ul>
 </template>
 
 <style scoped>
-button {
-  width: 100%;
-  position: sticky;
-  bottom: 0;
+input[type="file"] {
+  height: 0;
+  width: 0;
+  overflow: hidden;
 }
 </style>
