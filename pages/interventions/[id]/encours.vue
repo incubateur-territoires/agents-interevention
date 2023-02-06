@@ -44,6 +44,7 @@
       <button class="fr-btn fr-btn--secondary">Continuer sans photo</button>
     </li>
     <li>
+      <input type="file" capture="environment" accept="image"> 
       <button class="fr-btn">Prendre une photo</button>
     </li>
   </ul>
