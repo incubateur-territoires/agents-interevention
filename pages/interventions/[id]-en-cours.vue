@@ -1,5 +1,7 @@
 <template>
   <SubHeader>Intervention 1234</SubHeader>
+  <Stepper :current="2" :last="3" :labels="['À faire', 'En cours', 'Terminé']">
+  </Stepper>
   <InterventionDetails>
     <section>
       <h2>Méthode d’effaçage utilisée :</h2>

@@ -2,7 +2,6 @@
 import { LMarker, LPopup, LTooltip } from "@vue-leaflet/vue-leaflet";
 </script>
 <template>
-    <Stepper></Stepper>
     <article class="fr-p-2w">
         <p class="fr-p-2w"> Kevin DUPOND, Stéphane Durand</p>
         <Tag>Urgent</Tag>
