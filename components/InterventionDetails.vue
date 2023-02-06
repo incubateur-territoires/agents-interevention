@@ -9,6 +9,8 @@ import { LMarker, LPopup, LTooltip } from "@vue-leaflet/vue-leaflet";
         <p class="fr-icon-calendar-2-line fr-pt-1w"> Publiée le 23/11/2023 par Jean-Baptiste M.</p>
         <p class="fr-icon-space fr-pt-1w"> Taille : Petit</p>
         <p class="fr-icon-edit-box-line fr-pt-1w"> Support : Mur, Porte</p>
+        <slot name="réalisée" />
+        <slot name="technique" />
         <p class="fr-mt-3w fr-mb-3w"> Le tag est situé sur la porte de garage et sur le mur situé juste à sa gauche. Il
             y a 4m2 de tags à nettoyer environ.</p>
         <slot />
