@@ -60,4 +60,15 @@ input[type="file"] {
   width: 0;
   overflow: hidden;
 }
+
+ul {
+  position: sticky;
+  bottom: 0;
+  background-color: var(--background-default-grey);
+}
+
+button, 
+label{
+  width: 100%;
+}
 </style>
