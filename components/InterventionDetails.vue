@@ -1,5 +1,15 @@
 <script setup>
 import { LMarker, LPopup, LTooltip } from "@vue-leaflet/vue-leaflet";
+const images = [
+    {
+        url: "https://images.unsplash.com/photo-1536849460588-696219a9e98d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1131&q=80",
+        tag: "Avant"
+    },
+    {
+        url: "https://images.unsplash.com/photo-1516962080544-eac695c93791?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+        tag: "Après"
+    }
+]
 </script>
 <template>
     <article class="fr-p-2w">
@@ -14,9 +24,12 @@ import { LMarker, LPopup, LTooltip } from "@vue-leaflet/vue-leaflet";
         <p class="fr-mt-3w fr-mb-3w"> Le tag est situé sur la porte de garage et sur le mur situé juste à sa gauche. Il
             y a 4m2 de tags à nettoyer environ.</p>
         <slot />
-        <img class="fr-responsive-img fr-mb-2w"
-            src="https://i.pinimg.com/originals/fe/64/99/fe649940d2ea4daa02c5f942fbb88517.jpg"
-            alt="[À MODIFIER - vide ou texte alternatif de l’image]" />
+        <ul>
+            <li v-for="image in images">
+                <p class="fr-tag" v-if="images.length > 1">{{ image.tag }}</p>
+                <img class="fr-responsive-img fr-mb-2w" :src="image.url" alt="image avant intervention" />
+            </li>
+        </ul>
         <Map :lat-lng="[50.433082, 2.821937]" :zoom=(14) style="height:500px">
             <LMarker :lat-lng="[50.433082, 2.821937]">
                 <LTooltip></LTooltip>
@@ -30,3 +43,8 @@ import { LMarker, LPopup, LTooltip } from "@vue-leaflet/vue-leaflet";
     <InterventionComments />
 </template>
 
+<style scoped>
+li {
+    list-style: none;
+}
+</style>
