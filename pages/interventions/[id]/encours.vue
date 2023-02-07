@@ -42,7 +42,9 @@
   <ul class="fr-btns-group">
     <li>
       <button class="fr-btn fr-btn--secondary">
-        Continuer sans photo
+        <a href="/interventions/1234/confirmation">
+          Continuer sans photo
+        </a>
       </button>
     </li>
     <li>
