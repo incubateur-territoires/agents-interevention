@@ -24,9 +24,9 @@ const images = [
         <p class="fr-mt-3w fr-mb-3w"> Le tag est situé sur la porte de garage et sur le mur situé juste à sa gauche. Il
             y a 4m2 de tags à nettoyer environ.</p>
         <slot />
-        <ul>
+        <ul class="fr-grid-row fr-grid-row--center images-intervention">
             <li v-for="image in images">
-                <p class="fr-tag" v-if="images.length > 1">{{ image.tag }}</p>
+                <p class="fr-tag tags-images" v-if="images.length > 1">{{ image.tag }}</p>
                 <img class="fr-responsive-img fr-mb-2w" :src="image.url" alt="image avant intervention" />
             </li>
         </ul>
@@ -44,7 +44,16 @@ const images = [
 </template>
 
 <style scoped>
+ul.images-intervention {
+    flex-wrap: nowrap;
+}
 li {
     list-style: none;
+    position: relative;
+}
+p.tags-images {
+    position: absolute;
+    top: 8px;
+    left: 8px;
 }
 </style>
