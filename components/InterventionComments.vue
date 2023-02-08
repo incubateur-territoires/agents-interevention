@@ -14,7 +14,7 @@
                         <p class="fr-p-2w fr-mb-1w">
                             Impossible de nettoyer la partie droite, il faut revenir avec plus de détergent.
                         </p>
-                        <datetime>01-02-2023</datetime>
+                        <time datetime="2023-02-01">01-02-2023</time>
                     </div>
                 </li>
 
@@ -25,7 +25,7 @@
                         <p class="fr-p-2w fr-mb-1w">
                             Ok, on en rachète, on le recevra dans 3 jours.
                         </p>
-                        <datetime class="fr-col-4">01-02-2023</datetime>
+                        <time datetime="2023-02-01">01-02-2023</time>
                     </div>
                 </li>
             </ul>
@@ -38,7 +38,7 @@
                         <p class="fr-p-2w fr-mb-1w">
                             C’est nettoyé. La mission est terminée.
                         </p>
-                        <datetime>01-02-2023</datetime>
+                        <time datetime="2023-02-01">01-02-2023</time>
                     </div>
                 </li>
             </ul>
@@ -48,6 +48,7 @@
             <button class="fr-icon-send-plane-fill comment-button" type="submit"></button>
         </form>
     </section>
+    
 
 </template>
 
