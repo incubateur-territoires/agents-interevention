@@ -1,3 +1,18 @@
+<script setup>
+  import {ref } from 'vue'
+  let imageData = ref("")
+
+  function previewImage(event) {
+    const file = event.target.files[0]
+
+    const reader = new FileReader()
+    reader.onload = (e) => {
+      imageData.value = e.target.result
+    }
+    reader.readAsDataURL(file)
+  }
+</script>
+
 <template>
   <SubHeader>Intervention 1234</SubHeader>
   <Stepper :current="2" :last="3" :labels="['À faire', 'En cours', 'Terminé']">
@@ -39,21 +54,23 @@
       </ul>
     </section>
   </InterventionDetails>
-  <ul class="fr-btns-group">
+
+  <ul class="fr-btns-group" id="photo">
     <li>
-      <button class="fr-btn fr-btn--secondary">
-        <a href="/interventions/1234/confirmation">
-          Continuer sans photo
-        </a>
-      </button>
+      <a class="fr-btn fr-btn--secondary" href="/interventions/1234/confirmation">
+        Continuer sans photo
+      </a>
     </li>
     <li>
-      <input type="file" capture="environment" accept="image/*" id="file">
+      <input type="file" ref="fileInput" capture="environment" accept="image/*" id="file" @change="previewImage">
       <label for="file" class="fr-btn">
         Prendre une photo
       </label>
     </li>
   </ul>
+  <div class="image-preview" v-if="imageData">
+    <img class="preview" :src="imageData">
+  </div>
 </template>
 
 <style scoped>
