@@ -78,11 +78,9 @@ const props = defineProps({
     <div v-if="imageData">
       <img class="fr-responsive-img" :src="imageData">
     </div>
-    <button class="fr-btn fr-grid-row--center">
-      <a href="/interventions/1234/confirmation">
-        Ajouter la photo
-      </a>
-    </button>
+    <a href="/interventions/1234/confirmation" class="fr-btn fr-grid-row--center">
+      Ajouter la photo
+    </a>
   </Modal>
 </template>
 
