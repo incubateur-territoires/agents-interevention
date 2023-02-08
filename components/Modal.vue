@@ -1,7 +1,7 @@
 <script setup>
-  const props = defineProps({
-    open: Boolean
-  })
+const props = defineProps({
+  open: Boolean
+})
 </script>
 
 <template>

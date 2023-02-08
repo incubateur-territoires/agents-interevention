@@ -1,16 +1,20 @@
 <script setup>
-  import {ref } from 'vue'
-  let imageData = ref("")
+import { ref } from 'vue'
+let imageData = ref("")
 
-  function previewImage(event) {
-    const file = event.target.files[0]
+function previewImage(event) {
+  const file = event.target.files[0]
 
-    const reader = new FileReader()
-    reader.onload = (e) => {
-      imageData.value = e.target.result
-    }
-    reader.readAsDataURL(file)
+  const reader = new FileReader()
+  reader.onload = (e) => {
+    imageData.value = e.target.result
   }
+  reader.readAsDataURL(file)
+}
+
+const props = defineProps({
+  showModal: Boolean
+})
 </script>
 
 <template>
@@ -62,15 +66,24 @@
       </a>
     </li>
     <li>
-      <input type="file" ref="fileInput" capture="environment" accept="image/*" id="file" @change="previewImage">
+      <input type="file" ref="fileInput" capture="environment" accept="image/*" id="file" @change="previewImage"
+        @click="showModal = true">
       <label for="file" class="fr-btn">
         Prendre une photo
       </label>
     </li>
   </ul>
-  <div class="image-preview" v-if="imageData">
-    <img class="preview" :src="imageData">
-  </div>
+  <Modal :open="showModal">
+    <SubHeader>Intervention 1234</SubHeader>
+    <div v-if="imageData">
+      <img class="fr-responsive-img" :src="imageData">
+    </div>
+    <button class="fr-btn fr-grid-row--center">
+      <a href="/interventions/1234/confirmation">
+        Ajouter la photo
+      </a>
+    </button>
+  </Modal>
 </template>
 
 <style scoped>
@@ -86,8 +99,8 @@ ul {
   background-color: var(--background-default-grey);
 }
 
-button, 
-label{
+button,
+label {
   width: 100%;
 }
 </style>
