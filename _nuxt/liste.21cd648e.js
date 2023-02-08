@@ -1,0 +1,1 @@
+import{_ as n}from"./Header.255c40f2.js";import{_}from"./InterventionList.71654087.js";import{a as r,b as c,f as o,F as s,o as a}from"./entry.7e0f7827.js";import"./Tag.77327246.js";const m={};function p(f,i){const t=n,e=_;return a(),c(s,null,[o(t),o(e)],64)}const k=r(m,[["render",p]]);export{k as default};

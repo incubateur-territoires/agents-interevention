@@ -1,1 +1,0 @@
-import{_ as t}from"./Header.74f488a0.js";import{a as r,b as n,h as a,r as c,o as s}from"./entry.a14af102.js";const _={};function d(e,l){const o=t;return s(),n("div",null,[a(o),c(e.$slots,"default")])}const p=r(_,[["render",d]]);export{p as default};
