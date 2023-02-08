@@ -23,10 +23,6 @@
                     <br />Française
                   </p>
                 </div>
-                <div class="fr-header__operator">
-                  <img src="~/assets/images/logo_incubateur.svg" class="fr-responsive-img" style="max-width: 12em"
-                    alt="" />
-                </div>
                 <div class="fr-header__navbar">
                   <button id="fr-btn-menu-mobile" class="fr-btn--menu fr-btn" :data-fr-opened="menuOpened"
                     aria-controls="header-navigation" aria-haspopup="menu" title="Menu" aria-label="Menu"
