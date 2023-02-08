@@ -12,15 +12,13 @@
       </p>
     </section>
   </InterventionDetails>
-  <button class="fr-btn fr-grid-row--center">
-    <a href="/">
-      Revenir à l’accueil
-    </a>
-  </button>
+  <a href="/" class="fr-btn fr-grid-row--center">
+    Revenir à l’accueil
+  </a>
 </template>
 
 <style scoped>
-button {
+a {
   width: 100%;
   position: sticky;
   bottom: 0;
