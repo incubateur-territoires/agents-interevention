@@ -54,7 +54,7 @@
           <nav id="main-navigation" class="fr-nav" role="navigation" aria-label="Menu principal">
             <ul class="fr-nav__list">
               <li class="fr-nav__item">
-                <nuxt-link class="fr-nav__link" to="home">Accueil</nuxt-link>
+                <nuxt-link class="fr-nav__link" to="/">Accueil</nuxt-link>
               </li>
               <li class="fr-nav__item">
                 <nuxt-link class="fr-nav__link" :to="{ name: 'contact' }">Contact</nuxt-link>
